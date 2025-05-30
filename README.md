@@ -8,7 +8,7 @@ More specifically, the experiment reproduction of **Table 5 - ResNet18 on CIFAR1
 
 # ⚠️ Problems
 [ ] the reported 94% accuracy is not achieved. Currently at 92% \
-[ ] The reported 6M parameters of the prodpoly model is not in this implementation, but corrently 5.2M - might signal a **bug** in this implementation.
+[ ] #paramters of the prodpoly is 5.2M instead of the reported 6M - might signal a **bug** in this implementation.
 
 # 1. Implementing the baseline w/ *the reported training setup*
 The baseline ResNet18 on CIFAR10 with pytorch lightning in this [link](https://lightning.ai/docs/pytorch/stable/notebooks/lightning_examples/cifar10-baseline.html) is reported to get 93-94% accuracy on CIFAR10 with 40-50 epochs with [their learning rate scheduler.](https://arc.net/l/quote/ghcogmmt)
