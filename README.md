@@ -46,7 +46,7 @@ You want to install mm from source as you'll need to modify the backbone to the 
 # 2. Implementing ProdPoly
 The modification to the mm ResNet backbones are placed in this [folder](https://github.com/grigorisg9gr/polynomial_nets/tree/master/classification-NO-activation-function).
 
-I've used the [pinet_relu.py](https://github.com/grigorisg9gr/polynomial_nets/blob/master/classification-NO-activation-function/backbones/pinet_relu.py) backbone modification, which yeilds (from what I understand) a **2nd order polynomial expansion** you can see the [diff - orig | pinet relu](https://www.diffchecker.com/nZxIzRHs/)
+I've used the [pinet_relu.py](https://github.com/grigorisg9gr/polynomial_nets/blob/master/classification-NO-activation-function/backbones/pinet_relu.py) backbone modification, which yeilds (from what I understand) a **2nd order polynomial expansion** you can see the [diff - orig | pinet relu](https://www.diffchecker.com/nZxIzRHs/) between the [origial backbone](https://github.com/open-mmlab/mmpretrain/blob/master/mmcls/models/backbones/resnet.py) and the modified [pinet backbone](https://github.com/grigorisg9gr/polynomial_nets/blob/master/classification-NO-activation-function/backbones/pinet_relu.py)
 
 Adds (what I assume is) the instance normalization as norm3 and the Hadamard product in lines 135-136 to yeild a 2nd order polynomial expansion (see the `second` variable)
 
