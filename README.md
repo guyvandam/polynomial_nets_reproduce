@@ -2,6 +2,10 @@
 
 More specifically, the experiment reproduction of **Table 5 - ResNet18 on CIFAR10 image classification task.** with the reported training setup w/ pytorch lightning and mmpretrain.
 
+---
+
+![image](https://github.com/user-attachments/assets/febdb05b-f284-41ec-b80d-ce83f2a57732)
+
 
 > **Accuracy**: *accruacy* refers to *top-1 accuracy*
 
